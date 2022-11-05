@@ -1,0 +1,48 @@
+   int n1, n2, mSayi;
+        int ebob = 1;
+        int i = 1;
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("1. SAYIYI GİRİNİZ");
+        n1 = input.nextInt();
+
+        Scanner input2 = new Scanner(System.in);
+        System.out.println("2. SAYIYI GİRİNİZ");
+        n2 = input2.nextInt();
+
+
+        if (n1 > n2) {
+            mSayi = n1;
+        } else {
+            mSayi = n2;
+
+
+        }
+        while (i < mSayi) {
+
+
+            if (n1 % i == 0 && n2 % i == 0) {
+
+                ebob = i;
+
+                i++;
+
+
+
+
+                int ekok = (n1 * n2) / ebob;
+
+                
+
+                System.out.println(" ekok  " + ekok);
+                System.out.println(" ebob" + ebob);
+
+            }
+
+
+        }
+
+    }
+
+}
